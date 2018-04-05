@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context="com.example.android.cricketcounterapp.MainActivity">
+
+    <ImageView
+        android:id="@+id/ipl_logo"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:src="@drawable/ipl"/>
+
+    <TextView
+        android:id="@+id/total_overs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ipl_logo"
+        android:text="5 Overs Match"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"/>
+
+    <LinearLayout
+        android:id="@+id/score_board"
+        android:layout_below="@id/total_overs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kolkata Knight Riders"
+                android:fontFamily="serif"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#3A225D"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/team_a_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="54sp"
+                    android:textColor="#3A225D"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:textSize="42sp"
+                    android:textColor="#3A225D"/>
+
+                <TextView
+                    android:id="@+id/team_a_wickets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="42sp"
+                    android:textColor="#3A225D"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Overs: "
+                    android:textSize="18sp"
+                    android:textColor="#3A225D"/>
+
+                <TextView
+                    android:id="@+id/team_a_overs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:textColor="#3A225D"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="."
+                    android:textColor="#3A225D"/>
+
+                <TextView
+                    android:id="@+id/team_a_balls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:textColor="#3A225D"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/darker_gray">
+
+        </View>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sunrisers Hyderabad"
+                android:fontFamily="serif"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#9A1C22" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/team_b_score"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="54sp"
+                    android:textColor="#9A1C22"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/"
+                    android:textSize="42sp"
+                    android:textColor="#9A1C22"/>
+
+                <TextView
+                    android:id="@+id/team_b_wickets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="42sp"
+                    android:textColor="#9A1C22"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Overs: "
+                    android:textSize="18sp"
+                    android:textColor="#3A225D"/>
+
+                <TextView
+                    android:id="@+id/team_b_overs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:textColor="#3A225D"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="."
+                    android:textColor="#3A225D"/>
+
+                <TextView
+                    android:id="@+id/team_b_balls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textSize="18sp"
+                    android:textColor="#3A225D"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/toss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/score_board"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Toss:   "
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/toss_winner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yet to be decided"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/winner_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/toss"
+        android:gravity="center_horizontal"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Winner:   "
+            android:textColor="#000000"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/winner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yet to be decided"
+            android:textColor="@android:color/holo_orange_dark"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/wicket_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@id/extras_button"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        >
+
+        <Button
+            android:id="@+id/wicket"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="WKT"
+            android:background="@drawable/round_button"
+            android:layout_margin="2dp"
+            android:onClick="add_wickets"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/extras_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_above="@id/runs_to_add"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        >
+
+        <Button
+            android:id="@+id/no_ball"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="NB"
+            android:background="@drawable/round_button"
+            android:layout_margin="2dp"
+            android:onClick="add_no_ball"/>
+
+        <Button
+            android:id="@+id/wide_ball"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="WD"
+            android:background="@drawable/round_button"
+            android:layout_margin="2dp"
+            android:onClick="add_wide_ball"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/runs_to_add"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/toss_and_reset_button"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/add_one_run"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="1"
+            android:background="@drawable/round_button"
+            android:layout_margin="2dp"
+            android:onClick="add_one"/>
+
+        <Button
+            android:id="@+id/add_two_run"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="2"
+            android:background="@drawable/round_button"
+            android:layout_margin="2dp"
+            android:onClick="add_two"/>
+
+        <Button
+            android:id="@+id/add_four_run"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="4"
+            android:background="@drawable/round_button"
+            android:layout_margin="2dp"
+            android:onClick="add_four"/>
+
+        <Button
+            android:id="@+id/add_six_run"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:text="6"
+            android:background="@drawable/round_button"
+            android:layout_margin="2dp"
+            android:onClick="add_six"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/toss_and_reset_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="TOSS"
+            android:layout_marginRight="32dp"
+            android:background="@android:color/holo_orange_dark"
+            android:onClick="displayTossWinner"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="REMATCH"
+            android:background="@android:color/holo_orange_light"
+            android:onClick="rematch"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
